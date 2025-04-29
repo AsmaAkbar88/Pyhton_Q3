@@ -1,3 +1,5 @@
+# simple
+
 # class BankAccount():
 #     def __init__(self):
 #        self.name  = "hamzah"
@@ -88,21 +90,21 @@
 
 
 
-class BankAccount():
-    def __init__(self, name,  ):
-       self.name  = name
-       self._balance  = 1000
+# class BankAccount():
+#     def __init__(self, name,  ):
+#        self.name  = name
+#        self._balance  = 1000
 
-class BusinessAccount(BankAccount):
-    def __init__(self , company , name):
-        super().__init__(name)
-        self.owner_company = company
-
-
+# class BusinessAccount(BankAccount):
+#     def __init__(self , company , name):
+#         super().__init__(name)
+#         self.owner_company = company
 
 
-account1 = BusinessAccount("uperwork" , "zeeshan")
-print(f"My name is \"{account1.name}\" and my comapny name is \"{account1.owner_company}\" & my balance is \"{account1._balance}\""  )
+
+
+# account1 = BusinessAccount("uperwork" , "zeeshan")
+# print(f"My name is \"{account1.name}\" and my comapny name is \"{account1.owner_company}\" & my balance is \"{account1._balance}\""  )
 
 
 # _______________________________________________________________________________________________
