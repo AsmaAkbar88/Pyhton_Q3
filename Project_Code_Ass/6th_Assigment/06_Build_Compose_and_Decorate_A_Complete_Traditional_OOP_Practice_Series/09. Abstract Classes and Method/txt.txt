@@ -1,0 +1,39 @@
+1. @abstractmethod kya hota hai?
+Ye ek Python decorator hai, jo bataata hai ke:
+
+“Ye method (function) sirf rule banayega, lekin iska kaam child class karegi.”
+
+🔹2. ABC kya hota hai?
+ABC ka matlab hota hai: Abstract Base Class
+Ye Python ke abc module se aata hai:
+
+
+from abc import ABC, abstractmethod
+Jab aap kisi class ko ABC se inherit karti ho, to us class ke andar @abstractmethod use kar sakti ho.
+
+Ye base class banata hai jisko direct use nahi karte, balki inheriting classes use karti hain.
+
+🔹3. pass kyun likha hota hai?
+pass ka matlab hota hai: "Filhal is method ke andar kuch nahi likha."
+
+
+@abstractmethod
+def area(self):
+    pass
+Iska matlab hai:
+
+"area() function ka rule hai, lekin iska actual kaam baad mein child class karegi."
+
+🔹4. Child class mein return kyun hota hai?
+Child class (jaise Rectangle) us area() method ka original kaam karti hai — formula likhti hai:
+
+
+def area(self):
+    return self.length * self.width
+Iska matlab hai:
+
+"Ab area() ka asli formula diya jaa raha hai."
+
+🔹5. Hum ye sab kyun banate hain?
+Jab aap chaahti ho ke sab child classes me kuch zaroori method ho (jaise area)
+to aap abstractmethod se rule laga deti ho.

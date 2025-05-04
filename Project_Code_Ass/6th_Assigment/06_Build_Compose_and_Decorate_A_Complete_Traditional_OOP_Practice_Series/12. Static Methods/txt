@@ -1,0 +1,4 @@
+✅ Explanation (Asan Words Mein):
+Static method ka matlab: Ye method kisi specific object pe depend nahi karta.
+
+Sirf input lega (celsius) aur output dega (fahrenheit), bina kisi class variable ya object variable use kiye.
