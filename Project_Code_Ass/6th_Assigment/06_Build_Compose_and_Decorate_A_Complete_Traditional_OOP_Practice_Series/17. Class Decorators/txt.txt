@@ -1,0 +1,53 @@
+Haan, bilkul! Tum bilkul sahi keh rahe ho. Class decorator ka use karte hue hum class ke andar automatically ek method (jaise greet()) add kar sakte hain, jo phir us class ke objects se call kiya ja sakta hai.
+
+Jab tum class decorator bana rahe hote ho, to wo class ko modify karta hai, aur uske andar nayi functionalities ya methods ko add karta hai. Tumhare example mein, hum add_greeting decorator ke through greet() method ko class Person ke andar add kar rahe hain.
+
+Process ko Simple Tarike Se Samjhate Hain:
+Tumne ek class Person banayi.
+
+add_greeting decorator ko is class pe apply kiya.
+
+Jab class pe decorator apply hota hai, to decorator us class mein ek naya method greet() add kar deta hai.
+
+Fir tum us greet() method ko class ke object se call kar sakte ho.
+
+Code Example:
+python
+Copy
+Edit
+# Step 1: Class Decorator function
+def add_greeting(cls):
+    # Step 2: greet method ko class mein add karte hain
+    def greet(self):
+        return "Hello from Decorator!"
+    
+    # Step 3: greet method ko class ke andar daal dete hain
+    cls.greet = greet
+    
+    return cls
+
+# Step 4: Class ko apply karte hain
+@add_greeting
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+# Step 5: Object banate hain aur greet() method ko call karte hain
+person = Person("Mona")
+print(person.name)     # Output: Mona
+print(person.greet())   # Output: Hello from Decorator!
+Explanation:
+add_greeting decorator: Ye function class ko modify karta hai aur uske andar ek greet() method add kar deta hai.
+
+greet() method: Ye method "Hello from Decorator!" return karta hai, aur ab ye method Person class ke saare objects ke liye available ho jata hai.
+
+Output:
+csharp
+Copy
+Edit
+Mona
+Hello from Decorator!
+Summary:
+Jab tum @add_greeting decorator apply karte ho, to greet() method Person class ke andar automatically add ho jata hai.
+
+Tum phir person.greet() se us method ko call karte ho aur wo "Hello from Decorator!" return karta hai.
