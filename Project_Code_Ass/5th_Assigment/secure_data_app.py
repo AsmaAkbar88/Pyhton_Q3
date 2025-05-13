@@ -67,7 +67,9 @@ def decrypt_data(encrypted_text, passkey):
 stored_data = load_data()
 
 # Streamlit UI
+st.set_page_config(page_title="🔒 Secure Data Encryption System", page_icon="🔒")
 st.title("🔒 Secure Data Encryption System")
+
 
 # Sidebar Menu
 menu = ["🏠 Home", "📝 Store Data", "🆕 Register", "🔍 Retrieve Data", "🔑 Login"]
@@ -168,3 +170,19 @@ elif choice == "🔍 Retrieve Data":
                     st.success(f"🔓 Decrypted: {result}")
                 else:
                     st.error("❌ Incorrect passkey or corrupted data.")
+
+
+
+st.markdown(
+    """
+    <style>
+    .footer { position: fixed; bottom: 10px; right: 10px; text-align: right; color: gray; font-size: 13px;
+    }
+    </style>
+
+    <div class="footer">
+        2025 © Code & Creativity by Asma Akbar ✨
+    </div>
+    """,
+    unsafe_allow_html=True
+)
