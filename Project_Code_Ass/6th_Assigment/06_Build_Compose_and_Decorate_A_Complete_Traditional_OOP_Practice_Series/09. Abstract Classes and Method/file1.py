@@ -11,12 +11,10 @@ class Rectangle(Shape):
         self.weight = weight
 
 
-# Jab aap hm ho ke sab child classes me kuch zaroori method ho (jaise area)
-# to hm abstractmethod se rule laga deti ho.
 
     def area(self):
         return self.length * self.weight
 
 
 result = Rectangle(7 , 3)
-print(result.area()) 
+print(result.area()) #OUput:   21

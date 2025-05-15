@@ -28,3 +28,10 @@ reult.price = 900
 print(reult.price) 
 
 del reult.price   
+
+
+#Ouput:  600
+# 900
+# delete message
+# __________________________________________
+

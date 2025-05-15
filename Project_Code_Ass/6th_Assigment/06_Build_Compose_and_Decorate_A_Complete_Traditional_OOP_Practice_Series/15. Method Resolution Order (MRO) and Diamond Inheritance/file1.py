@@ -21,3 +21,4 @@ obj = D()
 
 
 obj.show()
+# Output:   Show from B

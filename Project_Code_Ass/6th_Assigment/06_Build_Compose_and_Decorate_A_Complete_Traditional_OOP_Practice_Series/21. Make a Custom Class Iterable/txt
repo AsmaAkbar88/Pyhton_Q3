@@ -1,0 +1,7 @@
+__iter__()
+➤ Ye method loop ko ye batata hai ke:
+ “Main loop chalane ke laayak hoon!”
+
+__next__()
+➤ Ye har for loop step par next number
+ return karega

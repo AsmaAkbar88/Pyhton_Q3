@@ -1,39 +1,45 @@
-1. @abstractmethod kya hota hai?
-Ye ek Python decorator hai, jo bataata hai ke:
+🎉 Ek Chhoti Story:
+Mama bolti hain:
+"Har bacha homework kare — rule bana diya!"
+(@abstractmethod)
 
-“Ye method (function) sirf rule banayega, lekin iska kaam child class karegi.”
+Har bacha apna alag homework karega —
+(Rectangle, Circle etc.)
 
-🔹2. ABC kya hota hai?
-ABC ka matlab hota hai: Abstract Base Class
-Ye Python ke abc module se aata hai:
+______________________________________
 
+✅ 1. @abstractmethod kya hai?
+Ye ek rule banane wala function hota hai.
 
-from abc import ABC, abstractmethod
-Jab aap kisi class ko ABC se inherit karti ho, to us class ke andar @abstractmethod use kar sakti ho.
+📌 Jab hum chahte hain:
 
-Ye base class banata hai jisko direct use nahi karte, balki inheriting classes use karti hain.
+"Sab bachi classes ek zaroori function likhein!"
+to hum @abstractmethod lagate hain.
 
-🔹3. pass kyun likha hota hai?
-pass ka matlab hota hai: "Filhal is method ke andar kuch nahi likha."
+______________________________________
+❓ Kyun banate hain?
+Taa ke har child class apna version likhe us function ka.
 
+Jaise:
+Agar Shape class banayi, to hum chahte hain:
 
-@abstractmethod
-def area(self):
-    pass
-Iska matlab hai:
+🔸 Har shape (Circle, Rectangle...) me area() function zaroor ho!
 
-"area() function ka rule hai, lekin iska actual kaam baad mein child class karegi."
+__________________________________________
 
-🔹4. Child class mein return kyun hota hai?
-Child class (jaise Rectangle) us area() method ka original kaam karti hai — formula likhti hai:
+🔨 Example socho:
+Mama bolti hain:
 
+"Har bacha apna homework kare, lekin sab ka naam 'homework' hi hoga!"
+(Yaani rule ek hi naam ka hai: homework(), lekin kaam alag-alag)
 
-def area(self):
-    return self.length * self.width
-Iska matlab hai:
+🔍 Without @abstractmethod:
+Koi child class bhool bhi sakta hai area() likhna = ❌ problem
 
-"Ab area() ka asli formula diya jaa raha hai."
+✅ With @abstractmethod:
+Jis class me area() nahi hoga, wo error dega!
+(Yaani force karega ki tum area() likho)
 
-🔹5. Hum ye sab kyun banate hain?
-Jab aap chaahti ho ke sab child classes me kuch zaroori method ho (jaise area)
-to aap abstractmethod se rule laga deti ho.
+💡 Summary in 1 line:
+@abstractmethod ek rule banata hai taake sab 
+child classes me ek specific method hona zaroori ho.

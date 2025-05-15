@@ -15,3 +15,4 @@ book3 = Book()
 
 
 Book.increment_book_count()
+#Ouput   Total books: 3

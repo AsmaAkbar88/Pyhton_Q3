@@ -30,4 +30,11 @@ print(f"""my name is {account1.new_name}
         and
           my favorite sunject is {account1.get_salry()}""")
 
+
+
+# OUTPUT:   my name is Asma Akbar
+#       and
+#       my salary is 778999
+#         and
+#           my favorite sunject is Math
 # ____________________________________________________________________________________________________________________

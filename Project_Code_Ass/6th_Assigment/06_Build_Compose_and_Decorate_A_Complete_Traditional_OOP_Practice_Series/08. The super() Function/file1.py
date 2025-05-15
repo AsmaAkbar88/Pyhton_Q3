@@ -13,7 +13,8 @@ print(teacher1.name , teacher1.subject)
 person1 = Person("Zahid" ) 
 print(person1.name)
 
-
+# Ouptut:   Asma Math
+# Zahid
 
 
 

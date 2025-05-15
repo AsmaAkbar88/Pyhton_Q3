@@ -12,5 +12,7 @@ student1 = Student("Asma Akbar", 900)
 
 student1.display()
 
+# OUTPUT:  My name is Asma Akbar
+# My marks out of 1000: 900
 
 # _________________________________________________________________

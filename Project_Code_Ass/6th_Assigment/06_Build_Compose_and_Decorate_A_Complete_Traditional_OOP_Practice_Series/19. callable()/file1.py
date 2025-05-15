@@ -9,3 +9,8 @@ class Multiplier():
 obj = Multiplier(5)
 result = obj(45)
 print(result)
+
+#Output:   225
+
+# ______________________________________
+

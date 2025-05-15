@@ -13,3 +13,6 @@ class Person():
 retul = Person("mona")
 print(retul.name)
 print(retul.grett())
+
+# Output: mona
+# ye tu chala do

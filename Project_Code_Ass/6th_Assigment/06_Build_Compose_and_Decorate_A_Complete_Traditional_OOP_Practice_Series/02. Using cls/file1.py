@@ -13,3 +13,5 @@ count2 = Counter()
 count3 = Counter()
 
 Counter.show_count()
+
+# ouput:   Total objects created: 3

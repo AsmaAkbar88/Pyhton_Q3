@@ -12,9 +12,6 @@ class Department:
 
 
 emp1 = Employee("Mona")
-
-
 dept = Department("IT", emp1)
-
-
 print(dept.show_details())
+   #Output:   Department: IT, Employee: Mona

@@ -24,3 +24,10 @@ Bank.change_bank_name("UBL Bank")
 
 print(f"{acc1.customer_name} now belongs to NEW {acc1.bank_name}")
 print(f"{acc2.customer_name} now belongs to NEW  {acc2.bank_name}")
+
+
+# OUTPUT:  Asma belongs to HBL Bank
+# Zoahib belongs to HBL Bank
+# ____________________________________________________________
+# Asma now belongs to NEW UBL Bank
+# Zoahib now belongs to NEW  UBL Bank

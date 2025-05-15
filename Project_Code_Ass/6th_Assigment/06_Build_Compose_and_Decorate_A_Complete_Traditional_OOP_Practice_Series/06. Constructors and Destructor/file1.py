@@ -6,3 +6,7 @@ class Logger():
         print("This is end of message")
 
 object1 = Logger()
+
+
+# OUTPUT:   Welcome to my Coding World
+# This is end of message
