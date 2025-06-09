@@ -1,0 +1,6 @@
+✅ Sahi baat ye hai:
+super() sirf tab zaroori hota hai jab tum parent class ka constructor
+ (__init__) ya koi aur method manually call karna chahti ho.
+Lekin agar parent class ka koi constructor nahi hai — ya child
+ class apna constructor define hi nahi kar rahi — to Python khud
+  hi implicitly (chhup kar) parent class ke methods use kar leti hai.

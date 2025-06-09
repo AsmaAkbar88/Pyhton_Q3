@@ -1,0 +1,41 @@
+ Code ki Urdu Explanation:
+✅ 1. Public attributes ya methods
+Aise variable ya function jo kahin se bhi access kiye ja sakte hain.
+Example: account.account_holder
+(Kisi bhi jagah se account_holder dekh sakte ho.)
+Jaise: account.account_holder
+
+Example: Mona — account ka malik.
+
+______________________
+
+✅ 2. Protected Attribute (_balance)
+Ye aik aisa attribute hota hai jo sirf class ke andar ya uski child class mein use karna chahiye.
+
+Lekin phir bhi direct access mumkin hota hai (lekin ye acha tareeqa nahi hota).
+
+Is liye hum getter aur setter methods ka use karte hain:
+
+Getter (get_balance): Balance dekhne ke liye.
+
+Setter (set_balance): Balance update karne ke liye, lekin pehle check hota hai ke value sahi hai ya nahi.
+
+______________________________
+
+✅ 3. Private Attribute (__pin)
+Isay class ke bahar se direct access nahi kiya ja sakta.
+bahar se access karne ki koshish karoge to error milega.
+Python isay name mangling se chhupa deta hai.
+
+Sirf method ke zariye isay access kiya ja sakta hai.
+
+get_pin() method diya gaya hai, lekin wo bhi sirf message return karta hai:
+"Access denied. PIN is private."
+In ke naam ke start mein __ (double underscore) hota hai.
+
+__________________________________
+
+| Method          | Kaam kya karta hai?                                           |
+| --------------- | ------------------------------------------------------------- |
+| `get_balance()` | Balance return karta hai (sirf dekhna)                        |
+| `set_balance()` | Balance change karta hai (lekin sirf jab value 0 ya zyada ho) |
