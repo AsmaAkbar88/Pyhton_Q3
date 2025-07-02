@@ -32,22 +32,17 @@ account = BankAccount("Mona", 1000)
 print(f"Account Holder: {account.account_holder}Balance (Direct Access): {account._balance}")   
 # Output:    Account Holder: MonaBalance (Direct Access): 100
 
+# print(account.__pin)  # ❌
+print(account.get_pin())    #Access denied. PIN is private.
 
+# ✔️ Getter method se balance dekhna
+print(f"Initial Balance: {account.get_balance()}")    #Initial Balance: 1000
 
-# # print(account.__pin)  # ❌
-print(account.get_pin())
-
-# # ✔️ Getter method se balance dekhna
-print(f"Initial Balance: {account.get_balance()}")
-
-# # ✔️ Setter method se balance update karna
+# ✔️ Setter method se balance update karna
 account.set_balance(1500)    #OUTPUT:   Balance updated to 1500.
 
-# # ❌ Negative value dena
+# ❌ Negative value dena
 account.set_balance(-500)   #output:Invalid amount. Balance cannot be negative
 
-# # 🖥️ Display method se details dekhna
-account.display()
-
-#OUTPUT:   Account Holder: Mona
-# Balance: 1500
+# 🖥️ Display method se details dekhna
+account.display()  #Account Holder: Mona  Balance: 1500
